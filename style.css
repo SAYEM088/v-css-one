@@ -64,8 +64,11 @@ transition: all .5s;
  }
  :is(header:hover, header:focus-within) nav{
    display: block;
+   height: 35vh;
+   z-index: 1;
 
  }
+
 nav{
     background-color: var(--HEADER-BGCOLOR);
     display: none;
@@ -107,4 +110,24 @@ nav{
  nav a:focus {
     transform: scale(1.2);
     transition: all 0.4s;
+ }
+
+ /* Extra  */
+.context{
+    text-align: center;
+    margin: 5rem 2rem ;
+ }
+ .sticky-footer{
+   position: sticky;
+   top: 100%;
+   text-align: center;
+   border-top: 1px solid rgb(0, 162, 255);
+   border-bottom: 1px solid rgb(0, 162, 255);
+   box-shadow: 5px;
+   color: rgb(25, 0, 255);
+   font-size: .8rem;
+   font-weight: 500;
+ }
+ .samit{
+    color: aqua;
  }
